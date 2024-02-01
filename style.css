@@ -1,0 +1,138 @@
+@media screen and (min-width: 500px) {
+    .nav {
+        height: 41px;
+        background-color: #DCF2F1;
+    }
+
+    * {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .buttons a {
+        text-decoration: none;
+        color: #365486;
+    }
+
+    .buttons a:hover {
+        color: #0F1035;
+    }
+
+    .insider:hover {
+        background-color: #365486;
+    }
+
+    .buttons a:active {
+        color: #0F1035;
+    }
+
+    .insider:active {
+        background-color: #365486;
+    }
+
+    .insider {
+        border: 2px solid #7FC7D9;
+        background-color: #7FC7D9;
+        padding: 1px 9px;
+        border-radius: 11px;
+    }
+
+    .innercard img {
+        width: 473px;
+        height: 326px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 12px;
+    }
+
+    /* Add this style at the end of your existing CSS */
+    .responsive .buttons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive .buttons a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #seater1 {
+        background-image: url("1seater.jpg");
+        background-size: cover;
+        width: 472px;
+        height: 323px
+    }
+
+    #seater2 {
+        background-image: url("2seater.jpeg");
+        background-size: cover;
+        width: 472px;
+        height: 323px
+    }
+
+    #seater3 {
+        background-image: url("3seater.jpg");
+        background-size: cover;
+        width: 472px;
+        height: 323px
+    }
+
+    #mess {
+        background-image: url("mess.jpg");
+        background-size: cover;
+        width: 472px;
+        height: 323px
+    }
+
+    #innercard2 {
+        display: none;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+#hidemess,
+#hide3seater ,
+#hide2seater  ,
+#hide1seater {
+        display: none;
+        background-color: black;
+        color: white;
+        opacity: 0.44;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    .cards {
+        display: flex;
+    }
+}
