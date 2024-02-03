@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav">
-        <nav>
-           <div class="buttons">
-            <div class="" id="insider1"><a href="" class="hostle insider" id="hostle1">Home</a></div>
-            <div class="" id="insider2"><a href="" class="hostle insider" id="hostle2">About us</a></div>
-            <div class="" id="insider3"><a href=""class="hostle insider"  id="hostle3">Facilities</a></div>
-            <div class="" id="insider4"><a href=""class="hostle insider" id="hostle4">Registrations</a></div>
-           </div>
-        </nav>
+    <div class="slideway" id="hamburgerbutton">
+        <div class="hamburger">
+            <button class="ham" id="burger">hamburger</button>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="buttons" id="sld">
+                    <div class="navbutton" id="insider1"><a href="" class="hostle insider" id="hostle1">Home</a></div>
+                    <div class="navbutton" id="insider2"><a href="" class="hostle insider" id="hostle2">About us</a></div>
+                    <div class="navbutton" id="insider3"><a href="" class="hostle insider"  id="hostle3">Facilities</a></div>
+                    <div class="navbutton" id="insider4"><a href="" class="hostle insider" id="hostle4">Registrations</a></div>
+                </div>
+            </nav>
+        </div>
     </div>
+    <script>
+        const navbutton = document.getElementById("burger");
+        const buttons = document.querySelector(".buttons");
+
+        navbutton.addEventListener("click", () => {
+            buttons.classList.toggle("buttons1");
+        });
+    </script>
+
+
     <div class="cards">
         <div class="card" id="card1">
             <div class="innercard" id="seater1">
@@ -35,7 +50,6 @@
         <script>
             const button1=document.getElementById("seater1");
             button1.addEventListener('mouseover', () => {
-                
                 const content = document.getElementById("hide1seater");
                 content.style.display = 'block';
             });
@@ -122,19 +136,7 @@
                 content.style.display = 'none';
             });
         </script>
-        <div class="card" id="card5">
-            <div class="innercard" id="mess">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos ducimus perspiciatis optio voluptatibus sapiente 
-                    illum veniam fugit cupiditate repudiandae necessitatibus voluptatum 
-                    non iste temporibus est neque, maiores id aliquam dolores.
-                </p>
-                <span class="details" style="display:flex">
-                    <span class="details" id="details1"><p>price(per month):</p></span>
-                    <span class="details" id="details2"><p>2500/-</p></span>
-                 </span>
-            </div>
-        </div>
+       
         </div>
 </body>
 </html>
